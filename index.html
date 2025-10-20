@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="book-container" >
+    <div class="book-container">
         <h1>Book List</h1>
         <form id="book-form">
-            <input id="book-001" type="text">
-            <input id="book-002" type="text">
-            <input id="book-003" type="text">
-            <input id="book-004" type="text">
-            <input id="book-005" type="text">
-            <button>Legg til bok</button>
+            <input id="title" type="text" placeholder="Tittel" required>
+            <input id="author" type="text" placeholder="Forfatter" required>
+            <input id="genre" type="text" placeholder="Sjanger" required>
+            <input id="pages" type="number" placeholder="Sider" required>
+            <label>
+                Favoritt:
+                <input id="favorite" type="checkbox">
+            </label>
+            <button type="submit">Legg til bok</button>
         </form>
+
+        <div class="controls">
+            <button id="filterFavorites">Vis favoritter</button>
+            <button id="sortTitle">Sorter A–Å</button>
+            <button id="clearAll">Slett alle bøker</button>
+            <button id="darkMode">Mørk/Lys skjerm</button>
+        </div>
+
     </div>
 
 </body>
