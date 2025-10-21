@@ -57,10 +57,6 @@ body.dark-mode {
   color: #dddddd;
 }
 
-.dark-mode .book-card {
-  background: #322f2f;
-  box-shadow: 0 0 10px rgba(19, 18, 18, 0.1);
-}
 .dark-mode input {
   background: #3a3a3a;
   color: #f0f0f0;

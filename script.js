@@ -97,7 +97,7 @@ form.addEventListener("submit", (e) => {
     author: authorInput.value.trim(),
     genre: genreInput.value.trim(),
     pages: parseInt(pagesInput.value),
-    // 🔧 Bruk .checked for å sjekke om favoritt er haket av
+    // Bruk .checked for å sjekke om favoritt er haket av
     favorite: favoriteInput.checked,
   };
 
